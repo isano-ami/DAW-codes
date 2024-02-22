@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+.main{
+    width: 100%;
+    background-position: center; 
+    background-size: cover;
+    height: 109vh;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #fff;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #83ac54;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color:#fff;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height:2px;
+    background: #fff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#Great {
+    background-image: url("10.jfif");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0 ;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Great h1 {
+    color: #fff;
+    font-family: Arial;
+}
+
+#Great p {
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+button.Started {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #0a4f19;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+
+button.Contact {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #bbe779;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
